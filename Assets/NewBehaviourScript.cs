@@ -3,26 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
-{ public void call(int a, int b)
+{ public void add(int a, int b)
     { 
-        int c = a + b;
-        int e = a - b;
-        int f = a % b;
-        
+        int c = a + b; 
         Debug.Log(c);
-        Debug.Log(e);
-        Debug.Log(f);
+       
 
 
 
     }
+    public void mult(int a, int b)
+    {
+        int e = a * b;
+        if (  e < 0)
+        { Debug.Log("e is negative "); }
+        else if (e > 0)
+        { Debug.Log("e is postive"); }
+        else
+        { Debug.Log(" e is null"); }
 
+
+    }
+    public void subt(int a, int b)
+    {
+       
+        int f = a - b;
+        Debug.Log(f);
+
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
-        call(17, 10);
-        call(10, 5);
+        subt(17, 10);
+        add(10, 5);
+        mult(30, 0);
+        
     }
+
 
     // Update is called once per frame
     void Update()
