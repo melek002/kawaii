@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - block
+  - player
+  - Obstacle
+  - score
   layers:
   - Default
   - TransparentFX
@@ -42,6 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: backgound
-    uniqueID: 4112430705
+  - name: background
+    uniqueID: 22574689
     locked: 0
